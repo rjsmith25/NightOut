@@ -1,0 +1,167 @@
+/* Base styles */
+
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700);
+
+:root {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+:root, body, ul, li, h1, h2, h3, h4, h5, h6, img, p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arimo', sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	background-color: #f8f8f8;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lobster', cursive;
+}
+
+.container {
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* Landing styles */
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/night-life.jpeg);
+  background-size:cover;
+  background-position: center;
+}
+
+.landing h1, .landing p{
+	margin-bottom: 10px;
+}
+
+.landing h1 {
+	font-size: 64px;
+	color: #de443a;
+}
+
+.landing p {
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}
+
+.searchbars input {
+	width: 250px;
+	font-size: 14px;
+	border-radius: 2px;
+	border: 1px solid #6d6d6d;
+	padding: 10px;
+}
+
+.searchbtn {
+	font-size: 14px;
+	border-radius: 2px;
+	background-color: #de443a;
+	border: 1px solid #de443a;
+	cursor: pointer;
+	color: white;
+	height: 39px;
+	width: 100px;
+}
+
+/* header */
+
+header {
+	min-height: 80px;
+	background-color: #0e0f11;
+}
+
+.nav-logo, .navbar-right {
+	margin-top: 25px;
+}
+
+.brand {
+	color: #de443a;;
+	font-family: 'Lobster';
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.navbar-right {
+	margin-left: auto;
+}
+
+.navbar-right li {
+	display: inline-block;
+	color: #de443a;
+	font-family: 'Lobster';
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+.navbar-right li:last-child {
+	margin-right: 0
+}
+
+.navbar-right li a {
+	text-decoration: none;
+	color: #de443a;
+}
+
+
+/* bars */
+
+.bars > .container {
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.bars {
+	padding-top: 20px;
+}
+
+.bar-item {
+	border: 1px solid #eeeeee;
+	margin: 0 20px 20px 0;
+	flex-basis: 31%;
+}
+
+.bar-item:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.bar-img {
+	width: 100%;
+	height: auto;
+}
+
+.bar-description {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px 0 10px;
+	background-color: #ffffff;
+	height: 95px;
+}
+
+.bar-description .attending {
+	width: 90px;
+	height: 32px;
+	padding: 0 14px 0 14px;
+	background-color: #de443a;
+	border: 1px solid #de443a;
+	color: white;
+	cursor: pointer;
+}
