@@ -1,54 +1,18 @@
 import React from 'react';
 import { Header } from '../Common';
+import Baritems from './baritems';
+import data from '../../data';
 
-const Localbars = () => { 
+const Localbars = () => {
 	return (
       <div>
       	<Header />
 	    <section className="bars">
 	       <div className="container">
-	       	  <div className="bar-item">
-	    		<img src="https://placeimg.com/370/245/tech" alt="" className="bar-img" />
-	    		<div className="bar-description">
-	    			<p className="bar-name">Random Bar</p>
-	    			<button className="attending">0 Going</button>
-	    		</div>
-	    	  </div>
-	    	  <div className="bar-item">
-	    		<img src="https://placeimg.com/370/245/tech" alt="" className="bar-img" />
-	    		<div className="bar-description">
-	    			<p className="bar-name">Random Bar</p>
-	    			<button className="attending">0 Going</button>
-	    		</div>
-	    	  </div>
-	    	  <div className="bar-item">
-	    		<img src="https://placeimg.com/370/245/tech" alt="" className="bar-img" />
-	    		<div className="bar-description">
-	    			<p className="bar-name">Random Bar</p>
-	    			<button className="attending">0 Going</button>
-	    		</div>
-	    	  </div>
-	    	  <div className="bar-item">
-	    		<img src="https://placeimg.com/370/245/tech" alt="" className="bar-img" />
-	    		<div className="bar-description">
-	    			<p className="bar-name">Random Bar</p>
-	    			<button className="attending">0 Going</button>
-	    		</div>
-	    	  </div>
-	    	  <div className="bar-item">
-	    		<img src="https://placeimg.com/370/245/tech" alt="" className="bar-img" />
-	    		<div className="bar-description">
-	    			<p className="bar-name">Random Bar</p>
-	    			<button className="attending">0 Going</button>
-	    		</div>
-	    	  </div>
-	    	  <div className="bar-item">
-	    		<img src="https://placeimg.com/370/245/tech" alt="" className="bar-img" />
-	    		<div className="bar-description">
-	    			<p className="bar-name">Random Bar</p>
-	    			<button className="attending">0 Going</button>
-	    		</div>
-	    	  </div>
+	       	  {data.bars.map((bar)=>{
+	       	  	  return <Baritems bar={bar} key={bar.id} />
+	       	   })
+	       	  }
 	       </div>
 	    </section>
       </div>	
