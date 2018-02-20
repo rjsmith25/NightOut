@@ -2,39 +2,30 @@
   "name": "nightout",
   "version": "1.0.0",
   "description": "find local bars near you",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "build": "webpack",
-    "watch": "webpack --watch",
-    "devServer": "webpack-dev-server"
+    "watch": "webpack --watch"
   },
   "dependencies": {
-    "auth0-js": "^9.0.2",
     "axios": "^0.17.1",
-    "babel-plugin-dynamic-import-webpack": "^1.0.2",
-    "babel-plugin-transform-decorators-legacy": "1.3.4",
-    "babel-register": "^6.26.0",
-    "compression": "^1.7.1",
-    "cors": "^2.8.4",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "firebase": "^4.8.1",
-    "lodash": "4.17.4",
+    "mongoose": "^5.0.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "2.2.0",
-    "styled-components": "^2.3.0",
-    "webpack": "^3.10.0",
-    "webpack-dev-middleware": "^2.0.1",
-    "webpack-hot-middleware": "^2.21.0"
+    "webpack": "^3.10.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-syntax-dynamic-import": "6.18.0",
@@ -42,8 +33,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "6.24.1",
-    "react-hot-loader": "^3.1.3",
-    "webpack-dev-server": "^2.9.7"
+    "react-hot-loader": "^3.1.3"
   },
   "keywords": [
     "local",

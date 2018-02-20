@@ -7,15 +7,15 @@ const Localbars = () => {
 	return (
       <div>
       	<Header />
-	    <section className="bars">
-	       <div className="container">
-	       	  {data.bars.map((bar)=>{
-	       	  	  return <Baritems bar={bar} key={bar.id} />
-	       	   })
-	       	  }
-	       </div>
-	    </section>
-      </div>	
+		    <section className="bars">
+		       <div className="container">
+		       	  {data.bars.map((bar)=>{
+		       	  	  return <Baritems key={bar.id} bar={bar} />
+		       	   })
+		       	  }
+		       </div>
+		    </section>
+      </div>
 	)
 }
 

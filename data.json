@@ -5,140 +5,227 @@
 		"name": "T5 Rooftop Lounge",
 		"image": "https://s3-media3.fl.yelpcdn.com/bphoto/w_hSZBUwc3oPhn4Bi7_zNA/o.jpg",
 		"url": "https://www.yelp.com/biz/t5-rooftop-lounge-jamaica?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "bayhouse-waterfront-bar-and-grille-rosedale",
 		"name": "Bayhouse Waterfront Bar and Grille",
 		"image": "https://s3-media1.fl.yelpcdn.com/bphoto/iIrfUSqEUA7H_pzC8bun5A/o.jpg",
 		"url": "https://www.yelp.com/biz/bayhouse-waterfront-bar-and-grille-rosedale?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "bar-veloce-jamaica",
 		"name": "Bar Veloce",
 		"image": "https://s3-media2.fl.yelpcdn.com/bphoto/wLaOZvbKDSJBmLE8Gm-Zjg/o.jpg",
 		"url": "https://www.yelp.com/biz/bar-veloce-jamaica?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "pa-nash-eurosoul-rosedale",
 		"name": "Pa-Nash Eurosoul",
 		"image": "https://s3-media3.fl.yelpcdn.com/bphoto/nAR2izGLheJgQwbgpavdHw/o.jpg",
 		"url": "https://www.yelp.com/biz/pa-nash-eurosoul-rosedale?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "lovells-afterdark-bar-and-lounge-jamaica",
 		"name": "Lovell's Afterdark Bar And Lounge",
 		"image": "https://s3-media3.fl.yelpcdn.com/bphoto/UYNrWDCEvcJOMAwF0PAZPQ/o.jpg",
 		"url": "https://www.yelp.com/biz/lovells-afterdark-bar-and-lounge-jamaica?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "scarlet-night-south-ozone-park",
 		"name": "Scarlet Night",
 		"image": "https://s3-media2.fl.yelpcdn.com/bphoto/1Z0K78YeLaytdZzaTEcUSg/o.jpg",
 		"url": "https://www.yelp.com/biz/scarlet-night-south-ozone-park?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "144-restaurant-and-lounge-jamaica",
 		"name": "144 Restaurant and Lounge",
 		"image": "https://s3-media4.fl.yelpcdn.com/bphoto/_0eWh-vh8-WWyeNvmZvlDw/o.jpg",
 		"url": "https://www.yelp.com/biz/144-restaurant-and-lounge-jamaica?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "new-york-sports-bar-queens-3",
 		"name": "New York Sports Bar",
 		"image": "https://s3-media3.fl.yelpcdn.com/bphoto/QOtjPuXCi00oUjr7I0fqGQ/o.jpg",
 		"url": "https://www.yelp.com/biz/new-york-sports-bar-queens-3?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "virgin-atlantic-clubhouse-jamaica",
 		"name": "Virgin Atlantic Clubhouse",
 		"image": "https://s3-media1.fl.yelpcdn.com/bphoto/_tGwG2CpIVLiqYb5LqhB4g/o.jpg",
 		"url": "https://www.yelp.com/biz/virgin-atlantic-clubhouse-jamaica?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "cbar-and-lounge-jamaica",
 		"name": "CBar & Lounge",
 		"image": "https://s3-media4.fl.yelpcdn.com/bphoto/pq3Ri3NIesruauRDxKpS8Q/o.jpg",
 		"url": "https://www.yelp.com/biz/cbar-and-lounge-jamaica?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "vibes-jamaica-2",
 		"name": "Vibes",
 		"image": "https://s3-media1.fl.yelpcdn.com/bphoto/F412gAfeSgsRSFl8-PkH_Q/o.jpg",
 		"url": "https://www.yelp.com/biz/vibes-jamaica-2?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "truffle-restaurant-and-bar-valley-stream-2",
 		"name": "TRUFFLE Restaurant & Bar",
 		"image": "https://s3-media2.fl.yelpcdn.com/bphoto/_s1fBCX6cZZtZsUjefgFeA/o.jpg",
 		"url": "https://www.yelp.com/biz/truffle-restaurant-and-bar-valley-stream-2?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "drink-queens",
 		"name": "Drink",
 		"image": "https://s3-media3.fl.yelpcdn.com/bphoto/3n4LxNKvpBYs1pQtS3WoqQ/o.jpg",
 		"url": "https://www.yelp.com/biz/drink-queens?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "bungalow-bar-and-restaurant-rockaway-beach",
 		"name": "Bungalow Bar & Restaurant",
 		"image": "https://s3-media1.fl.yelpcdn.com/bphoto/F6qxRRwRMil2txi2Szhd1A/o.jpg",
 		"url": "https://www.yelp.com/biz/bungalow-bar-and-restaurant-rockaway-beach?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "vino-volo-jamaica",
 		"name": "Vino Volo",
 		"image": "https://s3-media3.fl.yelpcdn.com/bphoto/VkM_SNcyH52diEHkW8T0zw/o.jpg",
 		"url": "https://www.yelp.com/biz/vino-volo-jamaica?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "island-taste-restaurant-and-lounge-queens-ny",
 		"name": "Island Taste Restaurant & Lounge",
 		"image": "https://s3-media2.fl.yelpcdn.com/bphoto/45xAn8aN9r5ubZ8ruM1RuA/o.jpg",
 		"url": "https://www.yelp.com/biz/island-taste-restaurant-and-lounge-queens-ny?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "thirsty-beer-wine-food-queens",
 		"name": "Thirsty - Beer, Wine, Food",
 		"image": "https://s3-media2.fl.yelpcdn.com/bphoto/K0tNi9s1UrlyvCMLvnswaQ/o.jpg",
 		"url": "https://www.yelp.com/biz/thirsty-beer-wine-food-queens?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "the-food-hut-and-bar-south-ozone-park",
 		"name": "The Food Hut & Bar",
 		"image": "https://s3-media1.fl.yelpcdn.com/bphoto/cnkn9Vh-iXz4cO6acwyAkg/o.jpg",
 		"url": "https://www.yelp.com/biz/the-food-hut-and-bar-south-ozone-park?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "aeronuova-queens-3",
 		"name": "AeroNuova",
 		"image": "https://s3-media3.fl.yelpcdn.com/bphoto/w-QqAMSXvNJx6QHaKNOVRQ/o.jpg",
 		"url": "https://www.yelp.com/biz/aeronuova-queens-3?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		},
 		{
 		"id": "connollys-bar-rockaway-beach",
 		"name": "Connolly's Bar",
 		"image": "https://s3-media4.fl.yelpcdn.com/bphoto/k9NWHkiOgWvLH3iH1TihPQ/o.jpg",
 		"url": "https://www.yelp.com/biz/connollys-bar-rockaway-beach?adjust_creative=NGyKVNbuZJ92kBOt_iUhtg&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=NGyKVNbuZJ92kBOt_iUhtg",
-		"attendance": [ ]
+		"attendance": []
 		}
+	],
+
+	 "bars-db":[
+		 {
+		 "id": 1,
+		 "bar_id": "t5-rooftop-lounge-jamaica",
+		 "attending": [{
+			 "id": 1,
+			 "uid":"sdfasdfih",
+			 "name" : "Tom Sanchez"
+		 },{
+			 "id": 2,
+			 "uid":"lojdhhdhgsk",
+			 "name" : "Roy Drake"
+		 },{
+			 "id": 3,
+			 "uid":"mnjsgoshgwybsl",
+			 "name" : "Sarah Marshall"
+		 }]
+		 },
+		 {
+		 "id": 2,
+		 "bar_id": "bayhouse-waterfront-bar-and-grille-rosedale",
+		 "attending": [
+			 {
+				 "id": 2,
+				 "uid" : "kksmndjfsdadfs",
+				 "name" : "Roy Drake"
+			 },
+			 {
+				 "id": 3,
+				 "uid": "qpljfbvybajsnsds",
+				 "name" : "Sarah Marshall"
+			 }
+		 ]
+		 },
+		 {
+			 "id": 3,
+			 "bar_id": "bar-veloce-jamaica",
+			 "attending": [{
+				 "id": 1,
+				 "uid": "mndhahdazebra",
+				 "name" : "Tom Sanchez"
+			 }]
+		 },
+		 {
+			 "id": 4,
+			 "bar_id": "pa-nash-eurosoul-rosedale",
+			 "attending": [{
+				 "id": 1,
+				 "uid": "madfhasdfa",
+				 "name" : "Tom Sanchez"
+			 },
+			 {
+				 "id": 2,
+				 "uid": "likjfgdshshddfamo",
+				 "name" : "Roy Drake"
+			 }]
+		 },
+		 {
+			 "id" : 5,
+			 "bar_id": "lovells-afterdark-bar-and-lounge-jamaica",
+			 "attending": [{
+				 "id": 2,
+				 "uid": "fuakbthsjdfas",
+				 "name" : "Roy Drake"
+			 }]
+		 }
+	 ],
+
+	 "users": [
+		 {
+			 "id": 1,
+			 "uid": "dshsjdhfsd",
+			 "name" : "Tom Sanchez"
+		 },
+		 {
+			 "id": 2,
+			 "uid": "dmnhsdsjdfhjsd",
+			 "name" : "Roy Drake"
+		 },
+		 {
+			 "id": 3,
+			 "uid": "lcnshdbsad",
+			 "name" : "Sarah Marshall"
+		 }
 	 ]
+
 }

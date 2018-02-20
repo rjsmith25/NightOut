@@ -6,27 +6,15 @@ import Localbars from './Localbars';
 class App extends Component {
   constructor(props){
     super(props)
-
-    this.state = {
-			searchString: ""
-		}
-
-		this.setSearchString = this.setSearchString.bind(this);
   }
-
-  setSearchString(event){
-		this.setState({
-			searchString: event.target.value
-		})
-	}
 
   render() {
     return (
       <BrowserRouter>
        <div>
          <Switch>
-          <Route exact path="/" component={ (props)=> { return <Landing searchString={this.state.searchString} setSearchString={this.setSearchString}  />} } />
-       	  <Route path="/localbars" component={Localbars} />
+          <Route exact path="/" component={Landing} />
+       	  <Route path="/local-bars" component={Localbars} />
          </Switch>
        </div>
       </BrowserRouter>
