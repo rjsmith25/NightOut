@@ -6,6 +6,6 @@ const barRouter = express.Router();
 barRouter.get('/', barController.getAllBars);
 barRouter.post('/', barController.createBar);
 barRouter.post('/:barid', barController.addBarAttendee);
-barRouter.delete('/:barid/attendee/:attendeeid',barController.deleteBarAttendee)
+barRouter.delete('/:barid/attendee/:attendeeid', barController.deleteBarAttendee);
 
 module.exports = barRouter;

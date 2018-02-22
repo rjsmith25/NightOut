@@ -58,6 +58,27 @@ function addBarAttendee(req,res){
      })
 }
 
+// delete bar
+function deleteBar(req,res){
+  if(!req.params.barid){
+    res.status(404).json({
+      "message": "bar id required"
+    })
+    return
+  }
+
+  Bar.findByIdAndRemove(req.params.barid)
+     .exec()
+     .then((bar)=>{
+       res.status(204).json(null);
+     })
+     .catch((err)=>{
+       res.status(404),json({
+         "message" : "unable to remove bar"
+       })
+     })
+}
+
 // delete attendee going to bar
 function deleteBarAttendee(req,res){
   if(!req.params.barid && !req.params.attendeeid ){
@@ -91,4 +112,4 @@ function deleteBarAttendee(req,res){
      })
 }
 
-module.exports = { getAllBars, createBar, addBarAttendee, deleteBarAttendee }
+module.exports = { getAllBars, createBar, deleteBar, addBarAttendee, deleteBarAttendee }
