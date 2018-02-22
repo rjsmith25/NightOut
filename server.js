@@ -4,6 +4,7 @@ require('dotenv').load();
 // get modules
 const express = require('express');
 const bodyParser = require('body-parser');
+const helmet = require('helmet')
 const path = require('path');
 const api = require('./api');
 
@@ -15,6 +16,9 @@ const app = express();
 
 // set server port number
 app.set('port', process.env.Port || 3000);
+
+//helps a bit with securing app by setting various HTTP headers
+app.use(helmet())
 
 // serve static files from public folder
 app.use(express.static(path.join(__dirname, 'public')));
