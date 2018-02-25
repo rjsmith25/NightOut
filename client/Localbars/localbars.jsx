@@ -3,10 +3,10 @@ import { Header } from '../Common';
 import Baritems from './baritems';
 import data from '../../data';
 
-const Localbars = () => {
+const Localbars = (props) => {
 	return (
       <div>
-      	<Header />
+      	<Header user={props.user} />
 		    <section className="bars">
 		       <div className="container">
 		       	  {data.bars.map((bar)=>{
