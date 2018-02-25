@@ -172,7 +172,7 @@ header {
 .register > .container {
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 500px;
 }
 
 .register-form {
@@ -206,7 +206,7 @@ header {
 .login > .container {
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 500px;
 }
 
 .login-form {
@@ -261,5 +261,5 @@ header {
   	font-size: 22px;
     text-align: center;
   }
-  
+
 }

@@ -4,10 +4,22 @@ import Register from './Register';
 import Login from './Login';
 import Landing from './Landing';
 import Localbars from './Localbars';
+import { auth } from '../service';
 
 class App extends Component {
   constructor(props){
     super(props)
+    this.state = {
+      currentUser: null
+    }
+  }
+
+  componentDidMount(){
+    auth.onAuthStateChanged((user)=> {
+      this.setState({
+        currentUser: user
+      })
+    })
   }
 
   render() {
@@ -18,7 +30,7 @@ class App extends Component {
           <Route exact path="/" component={Landing} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
-       	  <Route path="/local-bars" component={Localbars} />
+       	  <Route path="/local-bars" component={()=> { return <Localbars user={this.state.currentUser} />}} />
          </Switch>
        </div>
       </BrowserRouter>
