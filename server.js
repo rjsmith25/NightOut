@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet')
 const path = require('path');
 const api = require('./api');
+const { auth } = require('./service');
 
 // start up database connections
 require('./api/db');
