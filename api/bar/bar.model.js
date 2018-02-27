@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const userSchema = new mongoose.Schema({
   uid: {
     type: String,
-    required: [true, 'Must provide a user id'],
-    unique: true
+    required: [true, 'Must provide a user id']
   },
   name: {
     type: String,

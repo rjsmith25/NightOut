@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet')
 const path = require('path');
 const api = require('./api');
-const { auth } = require('./service');
+const { getBarInfo } = require('./service/bar')
 
 // start up database connections
 require('./api/db');
@@ -30,6 +30,10 @@ app.use(bodyParser.json());
 
 // set up api routes
 app.use('/api', api);
+
+// bar service call to yelp database and compare with localDB
+
+app.use('/bar', getBarInfo);
 
 // send react application
 app.get('*',(req,res) => {

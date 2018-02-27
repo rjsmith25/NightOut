@@ -30,7 +30,7 @@ class App extends Component {
           <Route exact path="/" component={Landing} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
-       	  <Route path="/local-bars" component={()=> { return <Localbars user={this.state.currentUser} />}} />
+       	  <Route path="/local-bars" component={(props)=> { return <Localbars user={this.state.currentUser} {...props} />}} />
          </Switch>
        </div>
       </BrowserRouter>
