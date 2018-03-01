@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { getBarById, createBarAttendee, createNewBar, deleteBarAttendee } from '../api';
 import axios from 'axios';
 
 class Baritems extends Component {
@@ -37,13 +38,12 @@ class Baritems extends Component {
 	}
 
 	barExist(id){
-		return axios.get(`http://localhost:3000/api/bar/${id}`)
-				 .then((data)=>{
-					 return true;
-				 })
-				 .catch((err)=>{
-					 return false
-				 })
+		return getBarById(id).then((data)=>{
+							return true;
+					 })
+					 .catch((err)=>{
+						 return false
+					 })
 	}
 
 	getbarAttendee(user,attendance){
@@ -94,11 +94,12 @@ class Baritems extends Component {
 	 async GoingToBar(){
 		if(!this.props.user){
 			this.props.history.push('/login');
+			return;
 		}
 
 		if(this.isGoing(this.props.user,this.state.attending)){
 			let user = this.getbarAttendee(this.props.user,this.state.attending);
-			axios.delete(`http://localhost:3000/api/bar/${this.props.bar.id}\/attendee\/${user._id}`)
+			deleteBarAttendee(this.props.bar.id,user._id)
 			     .then((bar)=>{
 						 this.removeAttendee(user,this.state.attending);
 						 this.decrementGoingCounter();
@@ -112,32 +113,25 @@ class Baritems extends Component {
 		let doesBarExist = await this.barExist(this.props.bar.id);
 
 		if(doesBarExist){
-			axios.post(`http://localhost:3000/api/bar/${this.props.bar.id}`,{
-				uid: this.props.user.uid,
-				name: this.props.user.email
-			})
-			 .then((res)=>{
-				 this.addAttendee(res.data);
-				 this.incrementGoingCounter();
-			 })
-			 .catch((err)=>{
-				 console.log(err);
-			 })
-			 return;
+			createBarAttendee(this.props.bar.id,this.props.user.uid,this.props.user.email)
+					 .then((res)=>{
+						 this.addAttendee(res.data);
+						 this.incrementGoingCounter();
+					 })
+					 .catch((err)=>{
+						 console.log(err);
+					 })
+			return;
 		}
 
-		axios.post('http://localhost:3000/api/bar',{
-			bar_id: this.props.bar.id,
-			uid: this.props.user.uid,
-			name: this.props.user.email
-		})
-		.then((res)=>{
-			this.updateAttendance(res.data.attending);
-			this.incrementGoingCounter()
-		})
-		.catch((err)=>{
-			console.log(err);
-		})
+		createNewBar(this.props.bar.id,this.props.user.uid,this.props.user.email)
+				.then((res)=>{
+					this.updateAttendance(res.data.attending);
+					this.incrementGoingCounter()
+				})
+				.catch((err)=>{
+					console.log(err);
+				})
 	}
 
 	render() {
