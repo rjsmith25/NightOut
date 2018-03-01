@@ -28,7 +28,6 @@ class Baritems extends Component {
 	}
 
 	isGoing(user,attendance){
-		console.log('attendance:', attendance)
 		for(let i = 0; i < attendance.length; i++){
 			if(attendance[i].uid === user.uid){
 				return true;
