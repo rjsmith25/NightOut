@@ -5,12 +5,12 @@ const yelp = new Yelp({
   consumer_key: process.env.Yelp_Consumer_Key,
   consumer_secret: process.env.Yelp_Consumer_Secret,
   token: process.env.Yelp_Token,
-  token_secret: process.env.Yelp_Token_Secret,
+  token_secret: process.env.Yelp_Token_Secret
 });
 
 // change image url string from ms.jpg to get original url image size
 function _orginalImageUrl(image_url) {
-	return image_url.slice(0,image_url.length - 6) + "o.jpg"
+	return image_url.slice(0,image_url.length - 6) + "o.jpg";
 }
 
 // find bars in yelp database
@@ -66,7 +66,6 @@ async function getBarInfo(req,res){
     })
 
     res.status(200).json(barData);
-
   } catch(err) {
     res.status(404).json(err);
   }

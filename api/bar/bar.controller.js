@@ -6,11 +6,37 @@ function getAllBars(req,res){
     res.status(200).json(data)
   })
   .catch((err)=>{
-    res.status(400).json({
+    res.status(404).json({
       "message": "unable to get bars"
     })
   })
 }
+
+function getAbar(req,res){
+  if(!req.params.barid){
+    res.status(400).json({
+      "message": "bar id required"
+    })
+    return
+  }
+
+  Bar.find({ bar_id : req.params.barid })
+  .then((data)=>{
+   if(Array.isArray(data) && data.length === 0){
+     res.status(404).json({
+       "message" : "bar not found"
+     })
+     return;
+   }
+   res.status(200).json(data)
+ })
+ .catch((err)=>{
+   res.status(400).json({
+     "message": "unable to get bar"
+   })
+ })
+}
+
 
 // Create new bar with intital attendee
 function createBar(req,res){
@@ -32,12 +58,12 @@ function createBar(req,res){
 // add new attendee going to a bar
 function addBarAttendee(req,res){
   if(!req.params.barid){
-    res.status(404).json({
+    res.status(400).json({
       "message": "bar id required"
     })
     return
   }
-  Bar.findById(req.params.barid)
+  Bar.findOne({ bar_id : req.params.barid })
      .select('attending')
      .exec()
      .then((bar) => {
@@ -61,7 +87,7 @@ function addBarAttendee(req,res){
 // delete bar
 function deleteBar(req,res){
   if(!req.params.barid){
-    res.status(404).json({
+    res.status(400).json({
       "message": "bar id required"
     })
     return
@@ -82,13 +108,13 @@ function deleteBar(req,res){
 // delete attendee going to bar
 function deleteBarAttendee(req,res){
   if(!req.params.barid && !req.params.attendeeid ){
-    res.status(404).json({
-      "message" : "bar id and attendee id required"
+    res.status(400).json({
+      "message" : "bar id and attendee _id required"
     })
     return;
   }
 
-  Bar.findById(req.params.barid)
+  Bar.findOne({ bar_id : req.params.barid })
      .select('attending')
      .exec()
      .then((bar)=>{
@@ -106,10 +132,11 @@ function deleteBarAttendee(req,res){
        res.status(204).json(null)
      })
      .catch((err)=>{
+       console.log(err);
        res.status(404).json({
          "message" : "unable to delete attendee"
        })
      })
 }
 
-module.exports = { getAllBars, createBar, deleteBar, addBarAttendee, deleteBarAttendee }
+module.exports = { getAllBars, getAbar, createBar, deleteBar, addBarAttendee, deleteBarAttendee }

@@ -8,5 +8,6 @@
 	    "loose": true,
 	    "modules": false
 	  }]
-	]
+	],
+	"plugins": ["transform-async-to-generator"]
 }

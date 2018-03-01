@@ -2,14 +2,14 @@ import React, { Component} from 'react';
 import { connect } from 'react-redux';
 import { Header } from '../Common';
 import Baritems from './baritems';
-import data from '../../data';
 import axios from 'axios';
 
 class Localbars extends Component {
 	constructor(props){
     super(props)
 		this.state = {
-			bars: []
+			bars: [],
+			err: null
 		}
   }
 
@@ -21,20 +21,28 @@ class Localbars extends Component {
 					 })
 				 })
 				 .catch((err)=>{
-					 console.error(err);
+					 this.setState({
+						 err: `can not find bars for city: ${this.props.searchString} try searching a different city`
+					 })
 				 })
 	}
 
 	render() {
+		let renderContent;
+
+		if(this.state.err){
+			renderContent = <p>{this.state.err}</p>
+		}else {
+			renderContent = this.state.bars.map((bar)=>{
+								      return <Baritems key={bar.id} bar={bar} user={this.props.user} history={this.props.history} />
+						         })
+		}
     return (
 			<div>
       	<Header user={this.props.user} />
 		    <section className="bars">
 		       <div className="container">
-		       	  {this.state.bars.map((bar)=>{
-		       	  	  return <Baritems key={bar.id} bar={bar} user={this.props.user} history={this.props.history} />
-		       	   })
-		       	 }
+		       	  { renderContent }
 		       </div>
 		    </section>
       </div>
