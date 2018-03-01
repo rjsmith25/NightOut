@@ -33,6 +33,9 @@ class Register extends Component {
 			return null;
 		}
 		auth.createUserWithEmailAndPassword(this.state.email,this.state.password)
+        .then((user)=>{
+          this.props.history.push('/local-bars');
+        })
 				.catch((err)=>{
 					console.log(err.code, err.message)
 				})
