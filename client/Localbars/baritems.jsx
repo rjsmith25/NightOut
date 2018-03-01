@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { getBarById, createBarAttendee, createNewBar, deleteBarAttendee } from '../api';
-import axios from 'axios';
 
 class Baritems extends Component {
 	constructor(props){
@@ -90,7 +89,7 @@ class Baritems extends Component {
 		 })
 	}
 
-	 async GoingToBar(){
+	async GoingToBar(){
 		if(!this.props.user){
 			this.props.history.push('/login');
 			return;

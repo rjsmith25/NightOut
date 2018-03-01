@@ -2,15 +2,15 @@
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
-var dbUrl = 'mongodb://localhost/NightOut';
+var dbURI = 'mongodb://localhost/NightOut';
 
 if (process.env.NODE_ENV === 'production') {
-  dbUrl = process.env.MONGODB_URL;
+  dbURI = process.env.MONGOLAB_URI;
 }
-mongoose.connect(dbUrl);
+mongoose.connect(dbURI);
 
 mongoose.connection.on('connected', () => {
-  console.log(`Mongoose connected to ${dbUrl}`);
+  console.log(`Mongoose connected to ${dbURI}`);
 })
 
 mongoose.connection.on('error', err => {
