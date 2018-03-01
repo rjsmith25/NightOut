@@ -1,6 +1,12 @@
 const Yelp = require('yelp');
 const rp = require('request-promise');
 
+let BASE_URL = "http://localhost:3000";
+
+if (process.env.NODE_ENV === 'production') {
+  BASE_URL = process.env.BASE_URL;
+}
+
 const yelp = new Yelp({
   consumer_key: process.env.Yelp_Consumer_Key,
   consumer_secret: process.env.Yelp_Consumer_Secret,
@@ -8,7 +14,7 @@ const yelp = new Yelp({
   token_secret: process.env.Yelp_Token_Secret
 });
 
-// change image url string from ms.jpg to get original url image size
+// change image url string from small to get original size image url
 function _orginalImageUrl(image_url) {
 	return image_url.slice(0,image_url.length - 6) + "o.jpg";
 }
@@ -41,7 +47,7 @@ function _yelpDB(location){
 
 // find bars in local database
 function _localDB(){
-  return rp('http://localhost:3000/api/bar',{ json: true })
+  return rp(`${BASE_URL}/api/bar`,{ json: true })
     .then((bar)=>{
       return bar;
     })
