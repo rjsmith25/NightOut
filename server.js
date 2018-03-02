@@ -16,7 +16,7 @@ require('./api/db');
 const app = express();
 
 // set server port number
-app.set('port', process.env.Port || 3000);
+app.set('port', process.env.PORT || 3000);
 
 //helps a bit with securing app by setting various HTTP headers
 app.use(helmet())
